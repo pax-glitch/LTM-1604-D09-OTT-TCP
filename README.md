@@ -4,7 +4,7 @@
     </a>
 </h2>
 <h2 align="center">
-   NETWORK PROGRAMMING
+   ỨNG DỤNG OẲN TÙ TÌ QUA MẠNG SỬ DỤNG TCP
 </h2>
 <div align="center">
     <p align="center">
