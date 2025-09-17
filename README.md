@@ -20,7 +20,7 @@
 </div>
 
 **1**. **📖 Giới thiệu hệ thống**
-Ứng dụng **Oẳn Tù Tì qua mạng sử dụng TCP** được xây dựng nhằm mô phỏng một trò chơi đơn giản nhưng quen thuộc, cho phép người chơi **tham gia thi đấu trực tuyến** thông qua mạng LAN hoặc Internet.  
+- Ứng dụng **Oẳn Tù Tì qua mạng sử dụng TCP** được xây dựng nhằm mô phỏng một trò chơi đơn giản nhưng quen thuộc, cho phép người chơi **tham gia thi đấu trực tuyến** thông qua mạng LAN hoặc Internet.  
 Hệ thống hỗ trợ **tạo phòng chơi**, **tham gia phòng theo mã hoặc ngẫu nhiên**, thực hiện **chọn kéo / búa / bao** và trả về **kết quả tức thì, uy tín**.  
 Mục tiêu chính:
 - Nắm vững kiến thức về **lập trình mạng** với TCP Socket trong Java.  
