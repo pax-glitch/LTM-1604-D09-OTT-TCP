@@ -19,7 +19,7 @@
 
 </div>
 
-1. ## 📖 Giới thiệu hệ thống
+**1**. ## 📖 Giới thiệu hệ thống
 Ứng dụng **Oẳn Tù Tì qua mạng sử dụng TCP** được xây dựng nhằm mô phỏng một trò chơi đơn giản nhưng quen thuộc, cho phép người chơi **tham gia thi đấu trực tuyến** thông qua mạng LAN hoặc Internet.  
 Hệ thống hỗ trợ **tạo phòng chơi**, **tham gia phòng theo mã hoặc ngẫu nhiên**, thực hiện **chọn kéo / búa / bao** và trả về **kết quả tức thì, uy tín**.  
 Mục tiêu chính:
@@ -29,7 +29,7 @@ Mục tiêu chính:
 
 ---
 
-2. ## 🛠️ Công nghệ sử dụng
+**2**. ## 🛠️ Công nghệ sử dụng
 - **Ngôn ngữ lập trình:** Java  
 - **Giao tiếp mạng:** TCP Socket (ServerSocket, Socket, I/O Streams)  
 - **Mô hình kiến trúc:** Client–Server  
@@ -40,12 +40,13 @@ Mục tiêu chính:
 - **IDE khuyến nghị:** IntelliJ IDEA, Eclipse hoặc NetBeans  
 
 ---
-3. ## 🖼️ Một số hình ảnh hệ thống
+**3**. ## 🖼️ Một số hình ảnh hệ thống
 
 ---
-4. ## ⚙️ Các bước cài đặt
+***4**. ## ⚙️ Các bước cài đặt
 
-5. ## 📬 Liên hệ
+---
+**5**. ## 📬 Liên hệ
 - **Sinh viên thực hiện:** *Nguyễn Trọng Đàn* 
 - **Khoa Công nghệ Thông tin – Đại học Đại Nam**  
 - 🌐 Website: [https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin](https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin)  
