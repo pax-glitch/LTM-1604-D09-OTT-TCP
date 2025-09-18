@@ -28,7 +28,7 @@
 
 ### ✨ **Tính năng chính**
 **Client**  
-🎨 **Giao diện:** Java Swing 
+🎨 **Giao diện:** Java Swing
 🔗 **Kết nối:** Server qua TCP  
 🎮 **Phòng chơi:** Tham gia bằng mã hoặc ngẫu nhiên  
 ⚡ **Gameplay:** Oẳn Tù Tì thời gian thực  
@@ -86,3 +86,4 @@
 - 🌐 Website: [https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin](https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin)  
 - 📧 Email: *[Shun53137@gmail.com]*  
 - 📱 Fanpage: [AIoTLab - FIT DNU](https://www.facebook.com/DNUAIoTLab)  
+
