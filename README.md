@@ -107,70 +107,70 @@ Dưới đây là các hình ảnh minh họa các thành phần và giao diện
 
 ---
 
-## ⚙️ **4. Các bước cài đặt** 
+## ⚙️ **4. Các bước cài đặt**     
 
-🛠️ 4.1. Yêu cầu hệ thống
+🛠️ 4.1. Yêu cầu hệ thống    
 
-☕ Java Development Kit (JDK): Phiên bản 8+ (khuyến nghị JDK 11 hoặc 17)
+☕ Java Development Kit (JDK): Phiên bản 8+ (khuyến nghị JDK 11 hoặc 17)     
 
-💻 Hệ điều hành: Windows, macOS, hoặc Linux
+💻 Hệ điều hành: Windows, macOS, hoặc Linux    
 
-🖥️ Môi trường phát triển: IDE (IntelliJ IDEA, Eclipse, NetBeans) hoặc terminal
+🖥️ Môi trường phát triển: IDE (IntelliJ IDEA, Eclipse, NetBeans) hoặc terminal   
 
-📡 Kết nối mạng: LAN hoặc Internet nếu muốn nhiều máy chơi cùng nhau
+📡 Kết nối mạng: LAN hoặc Internet nếu muốn nhiều máy chơi cùng nhau   
 
-💾 Bộ nhớ: ≥ 4GB RAM, dung lượng trống tối thiểu 500MB
+💾 Bộ nhớ: ≥ 4GB RAM, dung lượng trống tối thiểu 500MB   
 
-📥 4.2. Các bước cài đặt
-🧰 Bước 1: Chuẩn bị môi trường
+📥 4.2. Các bước cài đặt     
+🧰 Bước 1: Chuẩn bị môi trường     
 
-- Cài đặt Java
+- Cài đặt Java    
 
-- Yêu cầu JDK 8 trở lên (JDK 21 vẫn chạy tốt).
+- Yêu cầu JDK 8 trở lên (JDK 21 vẫn chạy tốt).    
 
-- Kiểm tra bằng lệnh:
+- Kiểm tra bằng lệnh:       
 
-      java -version
-      javac -version
+      java -version   
+      javac -version  
 
 
-- Nếu cả hai hiển thị version ≥ 8 là hợp lệ.
+- Nếu cả hai hiển thị version ≥ 8 là hợp lệ.  
 
-- Cấu trúc thư mục dự án:
+- Cấu trúc thư mục dự án:      
 
-    └── src/           
-      ├── client/     # Code giao diện & xử lý phía Client           
-      ├── server/     # Code xử lý Server & quản lý phòng chơi
+    └── src/             
+      ├── client/     # Code giao diện & xử lý phía Client              
+      ├── server/     # Code xử lý Server & quản lý phòng chơi       
 
-🏗 Bước 2: Biên dịch mã nguồn
+🏗 Bước 2: Biên dịch mã nguồn   
 
-- Mở terminal và điều hướng đến thư mục dự án:
+- Mở terminal và điều hướng đến thư mục dự án:   
 
-      cd D:\Download\LTM-1604-D09-OTT-TCP\src
+      cd D:\Download\LTM-1604-D09-OTT-TCP\src   
 
-▶️ Bước 3: Chạy ứng dụng
+▶️ Bước 3: Chạy ứng dụng    
 
-- Khởi động Server
-- java server.GameServer
-- Server sẽ chạy trên port mặc định 12345 (có thể chỉnh trong code).
-- Console hiển thị:
-- GameServer running on port 12345
-- Khởi động Client
-- java client.GameClient
-- Mỗi client mở 1 terminal hoặc chạy nhiều lần từ IDE.
-- Khi vào, nhập Tên người chơi + IP Server + Port.
-- Ví dụ: nhập 127.0.0.1 nếu client và server chạy cùng máy.
-🚀 Cách Chơi
-- nhập tên người chơi khi mở Client.
-- Tạo phòng / Tham gia phòng: chọn ngẫu nhiên hoặc nhập ID phòng.
-- Gameplay:
-    ✊ Búa thắng ✌️ Kéo
-    ✋ Bao thắng ✊ Búa
-    ✌️ Kéo thắng ✋ Bao
-- Kết quả: hiển thị ngay sau khi cả 2 chọn xong.
-- Sau trận:
-- Chọn Play Again để chơi tiếp.
-- Chọn Leave để thoát phòng.
+- Khởi động Server   
+- java server.GameServer   
+- Server sẽ chạy trên port mặc định 12345 (có thể chỉnh trong code).   
+- Console hiển thị:   
+- GameServer running on port 12345     
+- Khởi động Client     
+- java client.GameClient     
+- Mỗi client mở 1 terminal hoặc chạy nhiều lần từ IDE.     
+- Khi vào, nhập Tên người chơi + IP Server + Port.     
+- Ví dụ: nhập 127.0.0.1 nếu client và server chạy cùng máy.    
+🚀 Cách Chơi     
+- nhập tên người chơi khi mở Client.      
+- Tạo phòng / Tham gia phòng: chọn ngẫu nhiên hoặc nhập ID phòng.      
+- Gameplay:      
+    ✊ Búa thắng ✌️ Kéo       
+    ✋ Bao thắng ✊ Búa      
+    ✌️ Kéo thắng ✋ Bao       
+- Kết quả: hiển thị ngay sau khi cả 2 chọn xong.      
+- Sau trận:      
+- Chọn Play Again để chơi tiếp.     
+- Chọn Leave để thoát phòng.      
 
 ---
 ## 📬 **5. Liên hệ**
