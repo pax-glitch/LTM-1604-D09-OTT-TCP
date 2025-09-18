@@ -19,35 +19,69 @@
 
 </div>
 
-**1**. **📖 Giới thiệu hệ thống**
-- Ứng dụng **Oẳn Tù Tì qua mạng sử dụng TCP** được xây dựng nhằm mô phỏng một trò chơi đơn giản nhưng quen thuộc, cho phép người chơi **tham gia thi đấu trực tuyến** thông qua mạng LAN hoặc Internet.  
-Hệ thống hỗ trợ **tạo phòng chơi**, **tham gia phòng theo mã hoặc ngẫu nhiên**, thực hiện **chọn kéo / búa / bao** và trả về **kết quả tức thì, uy tín**.  
-Mục tiêu chính:
-- Nắm vững kiến thức về **lập trình mạng** với TCP Socket trong Java.  
-- Thực hành xây dựng ứng dụng **Client–Server nhiều người dùng**.  
-- Ứng dụng vào **bài tập lớn, đồ án hoặc các hệ thống game online cơ bản**.  
+## 📖 **1. Giới thiệu hệ thống**  
+Ứng dụng **Game Oẳn Tù Tì (Kéo – Búa – Bao) qua mạng** được xây dựng dựa trên giao thức **TCP**, cho phép hai người chơi thi đấu trực tuyến qua mạng LAN hoặc Internet.  
+
+- **Server**: đóng vai trò trung tâm, quản lý kết nối, phòng chơi và kết quả trận đấu.  
+- **Client**: cung cấp giao diện chơi game, cho phép tạo phòng, tham gia phòng và hiển thị kết quả.  
+- **Lưu trữ dữ liệu**: có thể mở rộng để lưu lịch sử trận đấu và thống kê thành tích người chơi.  
+
+### ✨ **Tính năng chính**
+**Client**  
+🎨 **Giao diện:** Java Swing (kết hợp FlatLaf để hiện đại hơn)  
+🔗 **Kết nối:** Server qua TCP  
+🎮 **Phòng chơi:** Tham gia bằng mã hoặc ngẫu nhiên  
+⚡ **Gameplay:** Oẳn Tù Tì thời gian thực  
+🔄 **Tùy chọn:** Chơi lại hoặc thoát phòng bất kỳ lúc nào  
+
+**Server**  
+🔌 **Quản lý kết nối:** hỗ trợ đa luồng, nhiều Client đồng thời  
+🎯 **Xử lý logic game:** xác định kết quả dựa trên lựa chọn (Kéo/Búa/Bao)  
+👥 **Quản lý người chơi:** tạo, tham gia, rời phòng  
+📊 **Lưu trữ (tuỳ chọn):** lịch sử trận đấu ra file  
+
+### 🎲 **Luật Chơi**
+✊ **Búa thắng** ✌️ Kéo  
+✋ **Bao thắng** ✊ Búa  
+✌️ **Kéo thắng** ✋ Bao  
+🤝 **Hòa:** khi cả hai chọn giống nhau  
 
 ---
 
-**2**. **🛠️ Công nghệ sử dụng**
-- **Ngôn ngữ lập trình:** Java  
-- **Giao tiếp mạng:** TCP Socket (ServerSocket, Socket, I/O Streams)  
-- **Mô hình kiến trúc:** Client–Server  
-- **Giao diện người dùng:**  
-  - Java Swing (kết hợp **FlatLaf** để giao diện hiện đại, mềm mại hơn)  
-  - Có thể mở rộng bằng **JavaFX** cho hiệu ứng nâng cao  
-- **Quản lý dự án:** Maven / Gradle (tùy cấu hình)  
-- **IDE khuyến nghị:** IntelliJ IDEA, Eclipse hoặc NetBeans  
+## 🔧 **2. Công nghệ sử dụng**  
+
+<p align="center">
+  <a href="https://www.oracle.com/java/">
+    <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
+  </a>
+  <a href="https://www.oracle.com/java/technologies/javase-downloads.html">
+    <img src="https://img.shields.io/badge/JDK-8%2B-brightgreen?style=for-the-badge" />
+  </a>
+  <a href="https://en.wikipedia.org/wiki/Transmission_Control_Protocol">
+    <img src="https://img.shields.io/badge/TCP-Protocol-lightgrey?style=for-the-badge" />
+  </a>
+  <a href="https://docs.oracle.com/javase/tutorial/networking/sockets/">
+    <img src="https://img.shields.io/badge/Socket-Network-blue?style=for-the-badge" />
+  </a>
+  <a href="https://docs.oracle.com/javase/tutorial/uiswing/">
+    <img src="https://img.shields.io/badge/Java%20Swing-UI-orange?style=for-the-badge" />
+  </a>
+</p>  
 
 ---
-**3**. **🖼️ Một số hình ảnh hệ thống**
+
+## 🖼️ **3. Một số hình ảnh hệ thống**  
+
 
 ---
-**4**. **⚙️ Các bước cài đặt**
+
+## ⚙️ **4. Các bước cài đặt**  
+1. **Clone repository**  
+   
 
 ---
-**5**. **📬 Liên hệ**
-- **Sinh viên thực hiện:** *Nguyễn Trọng Đàn* 
+## 📬 **5. Liên hệ**
+- **Sinh viên thực hiện:** **Nguyễn Trọng Đàn**
 - **Khoa Công nghệ Thông tin – Đại học Đại Nam**  
 - 🌐 Website: [https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin](https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin)  
 - 📧 Email: *[Shun53137@gmail.com]*  
