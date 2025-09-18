@@ -77,9 +77,6 @@ Dưới đây là các hình ảnh minh họa các thành phần và giao diện
 Dưới đây là các hình ảnh minh họa các thành phần và giao diện của hệ thống trò chơi Oẳn Tù Tì qua mạng:
 
 <p align="center">
-
-*<em>Sơ đồ luồng hoạt động: Mô tả tổng quan về luồng dữ liệu giữa Client và Server qua giao thức TCP, bao gồm kết nối, gửi lựa chọn, xử lý logic và nhận kết quả.</em>*
-
 <br>
 <img src="docs/batdau.jpg" alt="Sơ đồ luồng" width="400"/><br><br>
 
