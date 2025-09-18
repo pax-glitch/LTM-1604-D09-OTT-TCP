@@ -133,7 +133,7 @@ Dưới đây là các hình ảnh minh họa các thành phần và giao diện
 
 - Cấu trúc thư mục dự án:
 
-    └── src/
+    └── src/           
         ├── client/     # Code giao diện & xử lý phía Client           
         ├── server/     # Code xử lý Server & quản lý phòng chơi
 
