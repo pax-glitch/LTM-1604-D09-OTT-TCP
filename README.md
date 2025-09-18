@@ -77,27 +77,27 @@ Dưới đây là các hình ảnh minh họa các thành phần và giao diện
 
 *<em>Sơ đồ luồng hoạt động: Mô tả tổng quan về luồng dữ liệu giữa Client và Server qua giao thức TCP, bao gồm kết nối, gửi lựa chọn, xử lý logic và nhận kết quả.</em>*
 
-<img src="docs/batdau.jpg" alt="Sơ đồ luồng" width="400"/>
+<img align="center" src="docs/batdau.jpg" alt="Sơ đồ luồng" width="400"/>
 
 *<em>Giao diện bắt đầu: Màn hình khởi động của ứng dụng Client, hiển thị các tùy chọn như tạo phòng, tham gia phòng hoặc thoát.</em>*
 
-<img src="docs/chinh.jpg" alt="Giao diện bắt đầu" width="400"/>
+<img align="center" src="docs/chinh.jpg" alt="Giao diện bắt đầu" width="400"/>
 
 *<em>Giao diện chính: Giao diện chính của Client, hiển thị thông tin người chơi, trạng thái kết nối và các nút điều khiển chính.</em>*
 
-<img src="docs/thamgia.jpg" alt="Giao diện chính" width="400"/>
+<img align="center" src="docs/thamgia.jpg" alt="Giao diện chính" width="400"/>
 
 *<em>Giao diện vào phòng: Màn hình cho phép người chơi nhập mã phòng hoặc chọn tham gia phòng ngẫu nhiên.</em>*
 
-<img src="docs/batdaugame.jpg" alt="Giao diện vào phòng" width="400"/>
+<img align="center" src="docs/batdaugame.jpg" alt="Giao diện vào phòng" width="400"/>
 
 *<em>Giao diện bắt đầu trò chơi: Giao diện hiển thị khi trò chơi bắt đầu, cho phép người chơi chọn Kéo, Búa hoặc Bao và hiển thị thời gian thực.</em>*
 
-<img src="docs/image.png" alt="Giao diện trò chơi" width="400"/>
+<img align="center" src="docs/image.png" alt="Giao diện trò chơi" width="400"/>
 
 *<em>Giao diện thoát phòng: Màn hình xác nhận khi người chơi muốn rời phòng hoặc thoát trò chơi.</em>*
 
-<img src="docs/server.jpg" alt="Giao diện server" width="400"/>
+<img align="center" src="docs/server.jpg" alt="Giao diện server" width="400"/>
 
 *<em>Giao diện log trên Server: Giao diện console hoặc GUI của Server, hiển thị thông tin kết nối, trạng thái phòng, lựa chọn của người chơi và kết quả trận đấu.</em>*
 
