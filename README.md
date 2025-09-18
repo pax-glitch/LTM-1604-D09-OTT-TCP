@@ -134,14 +134,14 @@ Dưới đây là các hình ảnh minh họa các thành phần và giao diện
 - Cấu trúc thư mục dự án:
 
     └── src/           
-        ├── client/     # Code giao diện & xử lý phía Client           
-        ├── server/     # Code xử lý Server & quản lý phòng chơi
+      ├── client/     # Code giao diện & xử lý phía Client           
+      ├── server/     # Code xử lý Server & quản lý phòng chơi
 
 🏗 Bước 2: Biên dịch mã nguồn
 
 - Mở terminal và điều hướng đến thư mục dự án:
 
-      cd D:\Download\RockPaperScissors\src
+      cd D:\Download\LTM-1604-D09-OTT-TCP\src
 
 ▶️ Bước 3: Chạy ứng dụng
 
