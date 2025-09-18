@@ -134,7 +134,7 @@ Dưới đây là các hình ảnh minh họa các thành phần và giao diện
 - Cấu trúc thư mục dự án:
 
     └── src/
-        ├── client/     # Code giao diện & xử lý phía Client
+        ├── client/     # Code giao diện & xử lý phía Client           
         ├── server/     # Code xử lý Server & quản lý phòng chơi
 
 🏗 Bước 2: Biên dịch mã nguồn
@@ -146,44 +146,25 @@ Dưới đây là các hình ảnh minh họa các thành phần và giao diện
 ▶️ Bước 3: Chạy ứng dụng
 
 - Khởi động Server
-
 - java server.GameServer
-
-
 - Server sẽ chạy trên port mặc định 12345 (có thể chỉnh trong code).
 - Console hiển thị:
-
 - GameServer running on port 12345
-
-
 - Khởi động Client
-
 - java client.GameClient
-
-
 - Mỗi client mở 1 terminal hoặc chạy nhiều lần từ IDE.
-
 - Khi vào, nhập Tên người chơi + IP Server + Port.
-
 - Ví dụ: nhập 127.0.0.1 nếu client và server chạy cùng máy.
-
 🚀 Cách Chơi
-
 - nhập tên người chơi khi mở Client.
-
 - Tạo phòng / Tham gia phòng: chọn ngẫu nhiên hoặc nhập ID phòng.
-
 - Gameplay:
     ✊ Búa thắng ✌️ Kéo
     ✋ Bao thắng ✊ Búa
     ✌️ Kéo thắng ✋ Bao
-
 - Kết quả: hiển thị ngay sau khi cả 2 chọn xong.
-
 - Sau trận:
-
 - Chọn Play Again để chơi tiếp.
-
 - Chọn Leave để thoát phòng.
 
 ---
