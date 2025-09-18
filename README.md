@@ -103,38 +103,93 @@ Dưới đây là các hình ảnh minh họa các thành phần và giao diện
 ---
 
 ## ⚙️ **4. Các bước cài đặt** 
-🔹 Yêu cầu môi trường
 
-☕ Java JDK 8+ (khuyến nghị JDK 11 hoặc cao hơn)
+🛠️ 4.1. Yêu cầu hệ thống
 
-💻 IDE: IntelliJ IDEA / Eclipse / NetBeans (hoặc có thể chạy bằng terminal)
+☕ Java Development Kit (JDK): Phiên bản 8+ (khuyến nghị JDK 11 hoặc 17)
 
-📡 Mạng LAN hoặc Internet (nếu muốn nhiều máy kết nối với nhau)
+💻 Hệ điều hành: Windows, macOS, hoặc Linux
 
-🔹 Bước 1: Clone source code
+🖥️ Môi trường phát triển: IDE (IntelliJ IDEA, Eclipse, NetBeans) hoặc terminal
 
-Tải project về bằng lệnh:
+📡 Kết nối mạng: LAN hoặc Internet nếu muốn nhiều máy chơi cùng nhau
 
-git clone https://github.com/pax-glitch/LTM-1604-D09-OTT-TCP.git
-cd LTM-1604-D09-OTT-TCP
+💾 Bộ nhớ: ≥ 4GB RAM, dung lượng trống tối thiểu 500MB
 
-🔹 Bước 2: Chạy Server
+📥 4.2. Các bước cài đặt
+🧰 Bước 1: Chuẩn bị môi trường
 
-Mở project trong IDE → tìm file GameServer.java trong thư mục server/ → chạy chương trình. Server sẽ khởi động trên port 12345 mặc định và màn hình console sẽ hiển thị GameServer running on port 12345.
+Cài đặt Java
 
-🔹 Bước 3: Chạy Client
+Yêu cầu JDK 8 trở lên (JDK 21 vẫn chạy tốt).
 
-Tìm file GameClient.java trong thư mục client/ → chạy chương trình. Giao diện đăng nhập xuất hiện, nhập Tên người chơi, Địa chỉ IP (vd: 127.0.0.1 nếu cùng máy hoặc IP LAN nếu khác máy) và Port (mặc định 12345). Sau đó chọn Tạo phòng hoặc Tham gia phòng.
+Kiểm tra bằng lệnh:
 
-🔹 Bước 4: Bắt đầu chơi
+java -version
+javac -version
 
-Khi đủ 2 người chơi, server gửi lệnh START:GAME. Người chơi chọn Kéo / Búa / Bao, kết quả hiển thị ngay lập tức. Sau mỗi ván: chọn PLAY_AGAIN để chơi lại hoặc LEAVE để thoát phòng.
 
-🔹 Bước 5: Kết nối nhiều máy (LAN/Internet)
+Nếu cả hai hiển thị version ≥ 8 là hợp lệ.
 
-Nếu muốn 2 máy khác nhau cùng chơi: chạy Server trên máy A (lấy địa chỉ IP LAN, ví dụ 192.168.1.xxx), sau đó trên máy B chạy Client và nhập IP của máy A để kết nối. Cả hai sẽ được ghép vào cùng phòng và thi đấu trực tuyến.
+Cấu trúc thư mục dự án:
 
-✅ Như vậy là hệ thống Game Oẳn Tù Tì qua TCP đã sẵn sàng hoạt động.
+    └── src/
+        ├── client/     # Code giao diện & xử lý phía Client
+        ├── server/     # Code xử lý Server & quản lý phòng chơi
+
+🏗 Bước 2: Biên dịch mã nguồn
+
+Mở terminal và điều hướng đến thư mục dự án:
+
+cd D:\Download\RockPaperScissors\src
+
+
+Biên dịch toàn bộ code:
+
+javac client/*.java server/*.java shared/*.java
+
+▶️ Bước 3: Chạy ứng dụng
+
+Khởi động Server
+
+java server.GameServer
+
+
+Server sẽ chạy trên port mặc định 12345 (có thể chỉnh trong code).
+Console hiển thị:
+
+GameServer running on port 12345
+
+
+Khởi động Client
+
+java client.GameClient
+
+
+Mỗi client mở 1 terminal hoặc chạy nhiều lần từ IDE.
+
+Khi vào, nhập Tên người chơi + IP Server + Port.
+
+Ví dụ: nhập 127.0.0.1 nếu client và server chạy cùng máy.
+
+🚀 Cách Chơi
+
+Đăng nhập: nhập tên người chơi khi mở Client.
+
+Tạo phòng / Tham gia phòng: chọn ngẫu nhiên hoặc nhập ID phòng.
+
+Gameplay:
+✊ Búa thắng ✌️ Kéo
+✋ Bao thắng ✊ Búa
+✌️ Kéo thắng ✋ Bao
+
+Kết quả: hiển thị ngay sau khi cả 2 chọn xong.
+
+Sau trận:
+
+Chọn Play Again để chơi tiếp.
+
+Chọn Leave để thoát phòng.
 
 ---
 ## 📬 **5. Liên hệ**
