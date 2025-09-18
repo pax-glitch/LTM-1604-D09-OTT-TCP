@@ -119,19 +119,19 @@ Dưới đây là các hình ảnh minh họa các thành phần và giao diện
 📥 4.2. Các bước cài đặt
 🧰 Bước 1: Chuẩn bị môi trường
 
-Cài đặt Java
+- Cài đặt Java
 
-Yêu cầu JDK 8 trở lên (JDK 21 vẫn chạy tốt).
+- Yêu cầu JDK 8 trở lên (JDK 21 vẫn chạy tốt).
 
-Kiểm tra bằng lệnh:
+- Kiểm tra bằng lệnh:
 
-java -version
-javac -version
+      java -version
+      javac -version
 
 
-Nếu cả hai hiển thị version ≥ 8 là hợp lệ.
+- Nếu cả hai hiển thị version ≥ 8 là hợp lệ.
 
-Cấu trúc thư mục dự án:
+- Cấu trúc thư mục dự án:
 
     └── src/
         ├── client/     # Code giao diện & xử lý phía Client
@@ -139,57 +139,52 @@ Cấu trúc thư mục dự án:
 
 🏗 Bước 2: Biên dịch mã nguồn
 
-Mở terminal và điều hướng đến thư mục dự án:
+- Mở terminal và điều hướng đến thư mục dự án:
 
-cd D:\Download\RockPaperScissors\src
-
-
-Biên dịch toàn bộ code:
-
-javac client/*.java server/*.java shared/*.java
+      cd D:\Download\RockPaperScissors\src
 
 ▶️ Bước 3: Chạy ứng dụng
 
-Khởi động Server
+- Khởi động Server
 
-java server.GameServer
-
-
-Server sẽ chạy trên port mặc định 12345 (có thể chỉnh trong code).
-Console hiển thị:
-
-GameServer running on port 12345
+- java server.GameServer
 
 
-Khởi động Client
+- Server sẽ chạy trên port mặc định 12345 (có thể chỉnh trong code).
+- Console hiển thị:
 
-java client.GameClient
+- GameServer running on port 12345
 
 
-Mỗi client mở 1 terminal hoặc chạy nhiều lần từ IDE.
+- Khởi động Client
 
-Khi vào, nhập Tên người chơi + IP Server + Port.
+- java client.GameClient
 
-Ví dụ: nhập 127.0.0.1 nếu client và server chạy cùng máy.
+
+- Mỗi client mở 1 terminal hoặc chạy nhiều lần từ IDE.
+
+- Khi vào, nhập Tên người chơi + IP Server + Port.
+
+- Ví dụ: nhập 127.0.0.1 nếu client và server chạy cùng máy.
 
 🚀 Cách Chơi
 
-Đăng nhập: nhập tên người chơi khi mở Client.
+- nhập tên người chơi khi mở Client.
 
-Tạo phòng / Tham gia phòng: chọn ngẫu nhiên hoặc nhập ID phòng.
+- Tạo phòng / Tham gia phòng: chọn ngẫu nhiên hoặc nhập ID phòng.
 
-Gameplay:
-✊ Búa thắng ✌️ Kéo
-✋ Bao thắng ✊ Búa
-✌️ Kéo thắng ✋ Bao
+- Gameplay:
+    ✊ Búa thắng ✌️ Kéo
+    ✋ Bao thắng ✊ Búa
+    ✌️ Kéo thắng ✋ Bao
 
-Kết quả: hiển thị ngay sau khi cả 2 chọn xong.
+- Kết quả: hiển thị ngay sau khi cả 2 chọn xong.
 
-Sau trận:
+- Sau trận:
 
-Chọn Play Again để chơi tiếp.
+- Chọn Play Again để chơi tiếp.
 
-Chọn Leave để thoát phòng.
+- Chọn Leave để thoát phòng.
 
 ---
 ## 📬 **5. Liên hệ**
