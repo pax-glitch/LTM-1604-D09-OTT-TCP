@@ -100,9 +100,41 @@ Dưới đây là các hình ảnh minh họa các thành phần và giao diện
 
 </p>
 
+---
 
-## ⚙️ **4. Các bước cài đặt**  
-   
+## ⚙️ **4. Các bước cài đặt** 
+🔹 Yêu cầu môi trường
+
+☕ Java JDK 8+ (khuyến nghị JDK 11 hoặc cao hơn)
+
+💻 IDE: IntelliJ IDEA / Eclipse / NetBeans (hoặc có thể chạy bằng terminal)
+
+📡 Mạng LAN hoặc Internet (nếu muốn nhiều máy kết nối với nhau)
+
+🔹 Bước 1: Clone source code
+
+Tải project về bằng lệnh:
+
+git clone https://github.com/pax-glitch/LTM-1604-D09-OTT-TCP.git
+cd LTM-1604-D09-OTT-TCP
+
+🔹 Bước 2: Chạy Server
+
+Mở project trong IDE → tìm file GameServer.java trong thư mục server/ → chạy chương trình. Server sẽ khởi động trên port 12345 mặc định và màn hình console sẽ hiển thị GameServer running on port 12345.
+
+🔹 Bước 3: Chạy Client
+
+Tìm file GameClient.java trong thư mục client/ → chạy chương trình. Giao diện đăng nhập xuất hiện, nhập Tên người chơi, Địa chỉ IP (vd: 127.0.0.1 nếu cùng máy hoặc IP LAN nếu khác máy) và Port (mặc định 12345). Sau đó chọn Tạo phòng hoặc Tham gia phòng.
+
+🔹 Bước 4: Bắt đầu chơi
+
+Khi đủ 2 người chơi, server gửi lệnh START:GAME. Người chơi chọn Kéo / Búa / Bao, kết quả hiển thị ngay lập tức. Sau mỗi ván: chọn PLAY_AGAIN để chơi lại hoặc LEAVE để thoát phòng.
+
+🔹 Bước 5: Kết nối nhiều máy (LAN/Internet)
+
+Nếu muốn 2 máy khác nhau cùng chơi: chạy Server trên máy A (lấy địa chỉ IP LAN, ví dụ 192.168.1.xxx), sau đó trên máy B chạy Client và nhập IP của máy A để kết nối. Cả hai sẽ được ghép vào cùng phòng và thi đấu trực tuyến.
+
+✅ Như vậy là hệ thống Game Oẳn Tù Tì qua TCP đã sẵn sàng hoạt động.
 
 ---
 ## 📬 **5. Liên hệ**
