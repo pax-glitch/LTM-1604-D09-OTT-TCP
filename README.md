@@ -84,6 +84,6 @@
 - **Sinh viên thực hiện:** **Nguyễn Trọng Đàn**
 - **Khoa Công nghệ Thông tin – Đại học Đại Nam**  
 - 🌐 Website: [https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin](https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin)  
-- 📧 Email: *[Shun53137@gmail.com]*  
+- 📧 Email: [Shun53137@gmail.com]
 - 📱 Fanpage: [AIoTLab - FIT DNU](https://www.facebook.com/DNUAIoTLab)  
 
