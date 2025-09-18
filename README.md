@@ -76,7 +76,6 @@
 ---
 
 ## ⚙️ **4. Các bước cài đặt**  
-1. **Clone repository**  
    
 
 ---
