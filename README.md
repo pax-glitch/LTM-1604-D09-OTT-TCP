@@ -73,9 +73,6 @@
 ## 🖼️ **3. Một số hình ảnh hệ thống**  
 Dưới đây là các hình ảnh minh họa các thành phần và giao diện của hệ thống trò chơi Oẳn Tù Tì qua mạng:
 
-## 🖼️ **3. Một số hình ảnh hệ thống**  
-Dưới đây là các hình ảnh minh họa các thành phần và giao diện của hệ thống trò chơi Oẳn Tù Tì qua mạng:
-
 <p align="center">
 <br>
 <img src="docs/batdau.jpg" alt="Sơ đồ luồng" width="400"/><br><br>
