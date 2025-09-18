@@ -28,7 +28,7 @@
 
 ### ✨ **Tính năng chính**
 **Client**  
-🎨 **Giao diện:** Java Swing (kết hợp FlatLaf để hiện đại hơn)  
+🎨 **Giao diện:** Java Swing 
 🔗 **Kết nối:** Server qua TCP  
 🎮 **Phòng chơi:** Tham gia bằng mã hoặc ngẫu nhiên  
 ⚡ **Gameplay:** Oẳn Tù Tì thời gian thực  
