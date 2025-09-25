@@ -81,13 +81,6 @@ Dưới đây là các hình ảnh minh họa các thành phần và giao diện
 
 
 <p align="center">
-  <img src="docs/batdau.jpg" alt="Giao diện bắt đầu" width="600"/>
-  <br>
-  <em>Giao diện bắt đầu: Màn hình khởi động của ứng dụng Client, hiển thị các tùy chọn như tạo phòng, tham gia phòng hoặc thoát.</em>
-</p>
-
-
-<p align="center">
   <img src="docs/chinh.jpg" alt="Giao diện chính" width="600"/>
   <br>
   <em>Giao diện chính: Giao diện chính của Client, hiển thị thông tin người chơi, trạng thái kết nối và các nút điều khiển chính.</em>
@@ -105,13 +98,6 @@ Dưới đây là các hình ảnh minh họa các thành phần và giao diện
   <img src="docs/batdaugame.jpg" alt="Giao diện bắt đầu trò chơi" width="600"/>
   <br>
   <em>Giao diện bắt đầu trò chơi: Giao diện hiển thị khi trò chơi bắt đầu, cho phép người chơi chọn Kéo, Búa hoặc Bao và hiển thị thời gian thực.</em>
-</p>
-
-
-<p align="center">
-  <img src="docs/image.png" alt="Giao diện thoát phòng" width="600"/>
-  <br>
-  <em>Giao diện thoát phòng: Màn hình xác nhận khi người chơi muốn rời phòng hoặc thoát trò chơi.</em>
 </p>
 
 
@@ -202,6 +188,7 @@ Dưới đây là các hình ảnh minh họa các thành phần và giao diện
 - 🌐 Website: [https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin](https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin)  
 - 📧 Email: [Shun53137@gmail.com]
 - 📱 Fanpage: [AIoTLab - FIT DNU](https://www.facebook.com/DNUAIoTLab)  
+
 
 
 
