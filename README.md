@@ -38,7 +38,7 @@
 🔌 **Quản lý kết nối:** hỗ trợ đa luồng, nhiều Client đồng thời  
 🎯 **Xử lý logic game:** xác định kết quả dựa trên lựa chọn (Kéo/Búa/Bao)  
 👥 **Quản lý người chơi:** tạo, tham gia, rời phòng  
-📊 **Lưu trữ (tuỳ chọn):** lịch sử trận đấu ra file  
+📊 **Lưu trữ (tuỳ chọn):** lịch sử trận đấu
 
 ### 🎲 **Luật Chơi**
 ✊ **Búa thắng** ✌️ Kéo  
@@ -100,6 +100,19 @@ Dưới đây là các hình ảnh minh họa các thành phần và giao diện
   <em>Giao diện bắt đầu trò chơi: Giao diện hiển thị khi trò chơi bắt đầu, cho phép người chơi chọn Kéo, Búa hoặc Bao và hiển thị thời gian thực.</em>
 </p>
 
+
+<p align="center">
+  <img src="docs/time.jpg" alt="Giao diện đếm ngược thời gian" width="600"/>
+  <br>
+  <em>Giao diện đếm ngược thời gian: Hệ thống hiển thị bộ đếm 30 giây để người chơi đưa ra lựa chọn (Kéo, Búa hoặc Bao). Nếu hết thời gian mà chưa chọn, hệ thống sẽ tự động xử lý kết quả.</em>
+</p>
+
+
+<p align="center">
+  <img src="docs/lose-time.jpg" alt="Thua do hết thời gian" width="600"/>
+  <br>
+  <em>Giao diện thua do quá thời gian: Người chơi không kịp đưa ra lựa chọn trong 30 giây sẽ bị xử thua ván đấu.</em>
+</p>
 
 <p align="center">
   <img src="docs/server.jpg" alt="Giao diện server" width="600"/>
@@ -189,6 +202,7 @@ Dưới đây là các hình ảnh minh họa các thành phần và giao diện
 - 🌐 Website: [https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin](https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin)  
 - 📧 Email: [Shun53137@gmail.com]
 - 📱 Fanpage: [AIoTLab - FIT DNU](https://www.facebook.com/DNUAIoTLab)  
+
 
 
 
