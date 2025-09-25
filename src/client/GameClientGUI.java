@@ -20,20 +20,31 @@ public class GameClientGUI extends JFrame {
     private RoomPanel roomPanel;
     private GamePanel gamePanel;
 
+    private BackgroundPanel backgroundPanel;
+
     public GameClientGUI(String host, int port) {
         setTitle("Oẳn Tù Tì Online");
         setSize(760, 540);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
+        // tạo background panel với ảnh
+        backgroundPanel = new BackgroundPanel("/client/images/background.png");
+        setContentPane(backgroundPanel);
+
         // init panels
         startPanel = new StartPanel(this::sendCommand, this::promptChangeName);
         roomPanel = new RoomPanel(this::sendCommand, this::onLeaveFromUI);
         gamePanel = new GamePanel(this::sendCommand, this::onLeaveFromUI);
 
-        setContentPane(startPanel);
+        // mặc định hiển thị startPanel
+        startPanel.setOpaque(false);
+        roomPanel.setOpaque(false);
+        gamePanel.setOpaque(false);
 
-        // connect
+        backgroundPanel.add(startPanel, BorderLayout.CENTER);
+
+        // connect tới server
         try {
             socket = new Socket(host, port);
             out = new PrintWriter(socket.getOutputStream(), true);
@@ -64,73 +75,85 @@ public class GameClientGUI extends JFrame {
                 final String msg = line;
                 System.out.println("SERVER -> " + msg);
 
-                // handle messages
                 if (msg.startsWith("ASSIGN_NAME:")) {
                     playerName = msg.substring("ASSIGN_NAME:".length()).trim();
                     SwingUtilities.invokeLater(() -> startPanel.setPlayerName(playerName));
+
                 } else if (msg.startsWith("ROOM_CREATED:")) {
                     currentRoomId = msg.substring("ROOM_CREATED:".length()).trim();
                     SwingUtilities.invokeLater(() -> {
                         startPanel.setRoomId(currentRoomId);
                         roomPanel.updateRoom(currentRoomId, playerName, "-");
-                        setContentPane(roomPanel);
-                        revalidate(); repaint();
+                        switchPanel(roomPanel);
                     });
+
                 } else if (msg.startsWith("JOIN_OK:")) {
                     currentRoomId = msg.substring("JOIN_OK:".length()).trim();
                     SwingUtilities.invokeLater(() -> {
                         roomPanel.updateRoom(currentRoomId, playerName, "-");
-                        setContentPane(roomPanel);
-                        revalidate(); repaint();
+                        switchPanel(roomPanel);
                     });
+
                 } else if (msg.startsWith("PLAYER_LIST:")) {
                     String list = msg.substring("PLAYER_LIST:".length()).trim();
                     SwingUtilities.invokeLater(() -> roomPanel.updatePlayers(list));
+
                 } else if (msg.startsWith("THONGBAO:")) {
                     String info = msg.substring("THONGBAO:".length()).trim();
                     SwingUtilities.invokeLater(() -> roomPanel.appendMessage(info));
+
                 } else if (msg.startsWith("START:GAME")) {
                     SwingUtilities.invokeLater(() -> {
                         gamePanel.reset();
-                        setContentPane(gamePanel);
-                        revalidate(); repaint();
+                        switchPanel(gamePanel);
                     });
+
                 } else if (msg.startsWith("RESULT:")) {
                     String res = msg.substring("RESULT:".length()).trim();
                     SwingUtilities.invokeLater(() -> {
                         gamePanel.showResult(res);
                         roomPanel.appendMessage("KẾT QUẢ: " + res);
                     });
+
                 } else if (msg.startsWith("LEAVE_OK")) {
                     SwingUtilities.invokeLater(() -> {
                         JOptionPane.showMessageDialog(this, "Bạn đã rời phòng.");
-                        setContentPane(startPanel);
-                        revalidate(); repaint();
-                        // reset roompanel
+                        switchPanel(startPanel);
                         roomPanel.resetForNewRoom();
                     });
+
                 } else if (msg.startsWith("ROOM_DELETED:")) {
                     SwingUtilities.invokeLater(() -> {
                         JOptionPane.showMessageDialog(this, "Phòng đã bị đóng.");
-                        setContentPane(startPanel);
-                        revalidate(); repaint();
+                        switchPanel(startPanel);
                         roomPanel.resetForNewRoom();
                     });
+
                 } else if (msg.startsWith("LOI:")) {
                     String err = msg.substring("LOI:".length()).trim();
-                    SwingUtilities.invokeLater(() -> JOptionPane.showMessageDialog(this, err, "Lỗi", JOptionPane.ERROR_MESSAGE));
+                    SwingUtilities.invokeLater(() ->
+                            JOptionPane.showMessageDialog(this, err, "Lỗi", JOptionPane.ERROR_MESSAGE));
+
                 } else {
-                    // other messages - put to room log
                     SwingUtilities.invokeLater(() -> roomPanel.appendMessage(msg));
                 }
             }
         } catch (IOException e) {
-            SwingUtilities.invokeLater(() -> JOptionPane.showMessageDialog(this, "Mất kết nối tới server.", "Lỗi", JOptionPane.ERROR_MESSAGE));
+            SwingUtilities.invokeLater(() ->
+                    JOptionPane.showMessageDialog(this, "Mất kết nối tới server.", "Lỗi", JOptionPane.ERROR_MESSAGE));
             System.exit(0);
         }
     }
 
-    // called by panels
+    // đổi panel hiển thị trên background
+    private void switchPanel(JPanel newPanel) {
+        newPanel.setOpaque(false);
+        backgroundPanel.removeAll();
+        backgroundPanel.add(newPanel, BorderLayout.CENTER);
+        backgroundPanel.revalidate();
+        backgroundPanel.repaint();
+    }
+
     private void sendCommand(String cmd) {
         if (out != null) out.println(cmd);
     }
@@ -144,13 +167,36 @@ public class GameClientGUI extends JFrame {
         }
     }
 
-    // UI triggered leave (immediately request server to leave)
     private void onLeaveFromUI() {
         sendCommand("{LEAVE}");
-        // actual UI change happens when LEAVE_OK received from server (or ROOM_DELETED)
     }
 
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new GameClientGUI("127.0.0.1", 12345).setVisible(true));
+        SwingUtilities.invokeLater(() ->
+                new GameClientGUI("127.0.0.1", 12345).setVisible(true));
+    }
+}
+
+/** Panel có background ảnh */
+class BackgroundPanel extends JPanel {
+    private final Image bg;
+
+    public BackgroundPanel(String imagePath) {
+        java.net.URL imgURL = getClass().getResource(imagePath);
+        if (imgURL != null) {
+            bg = new ImageIcon(imgURL).getImage();
+        } else {
+            System.err.println("Không tìm thấy ảnh background: " + imagePath);
+            bg = null;
+        }
+        setLayout(new BorderLayout());
+    }
+
+    @Override
+    protected void paintComponent(Graphics g) {
+        super.paintComponent(g);
+        if (bg != null) {
+            g.drawImage(bg, 0, 0, getWidth(), getHeight(), this);
+        }
     }
 }
