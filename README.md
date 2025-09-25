@@ -74,6 +74,13 @@
 Dưới đây là các hình ảnh minh họa các thành phần và giao diện của hệ thống trò chơi Oẳn Tù Tì qua mạng:
 
 <p align="center">
+  <img src="docs/dangnhap.jpg" alt="Giao diện đăng nhập" width="600"/>
+  <br>
+  <em>Giao diện đăng nhập: Màn hình cho phép người chơi nhập tên đăng nhập và mật khẩu trước khi vào hệ thống, đồng thời hỗ trợ tùy chọn đăng ký tài khoản mới.</em>
+</p>
+
+
+<p align="center">
   <img src="docs/batdau.jpg" alt="Giao diện bắt đầu" width="600"/>
   <br>
   <em>Giao diện bắt đầu: Màn hình khởi động của ứng dụng Client, hiển thị các tùy chọn như tạo phòng, tham gia phòng hoặc thoát.</em>
@@ -112,6 +119,12 @@ Dưới đây là các hình ảnh minh họa các thành phần và giao diện
   <img src="docs/server.jpg" alt="Giao diện server" width="600"/>
   <br>
   <em>Giao diện log trên Server: Giao diện console hoặc GUI của Server, hiển thị thông tin kết nối, trạng thái phòng, lựa chọn của người chơi và kết quả trận đấu.</em>
+</p>
+
+<p align="center">
+  <img src="docs/lichsu.jpg" alt="Giao diện lịch sử" width="600"/>
+  <br>
+  <em>Giao diện lịch sử: Màn hình hiển thị lịch sử các trận đấu sau khi đã xuất file, cho phép người chơi xem lại kết quả, thời gian và đối thủ của từng trận.</em>
 </p>
 
 
@@ -189,4 +202,5 @@ Dưới đây là các hình ảnh minh họa các thành phần và giao diện
 - 🌐 Website: [https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin](https://dainam.edu.vn/vi/khoa-cong-nghe-thong-tin)  
 - 📧 Email: [Shun53137@gmail.com]
 - 📱 Fanpage: [AIoTLab - FIT DNU](https://www.facebook.com/DNUAIoTLab)  
+
 
